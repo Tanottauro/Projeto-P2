@@ -44,7 +44,7 @@ body {
 #sidebar {
   grid-area: sidebar;
   height: 100%;
-  background-color: #610c88;
+  background-color: #A332B3;
   overflow-y: auto;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -149,9 +149,7 @@ body {
   justify-content: space-between;
 }
 
-.card-inner > .material-icons-outlined {
-  font-size: 45px;
-}
+
 
 .charts {
   display: grid;
@@ -367,4 +365,11 @@ display: table;
 .cancelar, .addProduto {
    width: 100%;
 }
+}
+
+.S{
+  color: #552583;
+}
+.L{
+  color: #FDB927;
 }
