@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  color: #9e9ea4;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -369,7 +369,11 @@ display: table;
 
 .S{
   color: #552583;
+  font-size: 25px;
+  font: normal;
 }
 .L{
   color: #FDB927;
+  font-size: 20px;
+  font: normal;
 }
