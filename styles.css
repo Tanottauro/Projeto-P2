@@ -34,7 +34,7 @@ body {
   box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
 }
 
-.menu-icon {
+.menu-icone {
   display: none;
 }
 
@@ -50,7 +50,7 @@ body {
   -webkit-transition: all 0.5s;
 }
 
-.barralateral-title {
+.barralateral-titulo {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,33 +58,33 @@ body {
   margin-bottom: 30px;
 }
 
-.barralateral-title > span {
+.barralateral-titulo > span {
   display: none;
 }
 
-.barralateral-brand {
+.barralateral-marca {
   margin-top: 15px;
   font-size: 20px;
   font-weight: 700;
 }
 
-.barralateral-list {
+.barralateral-topicos {
   padding: 0;
   margin-top: 15px;
   list-style-type: none;
 }
 
-.barralateral-list-item {
+.barralateral-topicos-item {
   padding: 20px 20px 20px 20px;
   font-size: 18px;
 }
 
-.barralateral-list-item:hover {
+.barralateral-topicos-item:hover {
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
 
-.barralateral-list-item > a {
+.barralateral-topicos-item > a {
   text-decoration: none;
   color: #ffffff;
 
@@ -100,26 +100,26 @@ body {
 
 /* ---------- PRINCIPAL ---------- */
 
-.main-container {
+.conteiner-central {
   grid-area: main;
   overflow-y: auto;
   padding: 20px 20px;
   color: rgba(255, 255, 255, 0.95);
 }
 
-.main-title {
+.titulo-central {
   display: flex;
   justify-content: space-between;
 }
 
-.main-cards {
+.cartas-centrais {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   margin: 20px 0;
 }
 
-.card {
+.cartas {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -127,23 +127,23 @@ body {
   border-radius: 5px;
 }
 
-.card:first-child {
+.cartas:first-child {
   background-color: #2962ff;
 }
 
-.card:nth-child(2) {
+.cartas:nth-child(2) {
   background-color: #ff6d00;
 }
 
-.card:nth-child(3) {
+.cartas:nth-child(3) {
   background-color: #2e7d32;
 }
 
-.card:nth-child(4) {
+.cartas:nth-child(4) {
   background-color: #d50000;
 }
 
-.card-inner {
+.cartas-internas {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -158,7 +158,7 @@ body {
   margin-top: 60px;
 }
 
-.charts-card {
+.charts-cartas {
   background-color: #263043;
   margin-bottom: 20px;
   padding: 25px;
@@ -192,11 +192,11 @@ body {
     display: none;
   }
 
-  .menu-icon {
+  .menu-icone {
     display: inline;
   }
 
-  .barralateral-title > span {
+  .barralateral-titulo > span {
     display: inline;
   }
 }
@@ -205,7 +205,7 @@ body {
 /* pequeno <= 768px */
 
 @media screen and (max-width: 768px) {
-  .main-cards {
+  .cartas-centrais {
     grid-template-columns: 1fr;
     gap: 10px;
     margin-bottom: 0;
