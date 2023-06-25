@@ -368,12 +368,13 @@ display: table;
 }
 
 .S{
-  color: #552583;
-  font-size: 25px;
+  color: #FDB927;
+  font-size: 22px;
   font: normal;
+  margin-right: 1px;
 }
 .L{
   color: #FDB927;
-  font-size: 20px;
+  font-size: 22px;
   font: normal;
 }
