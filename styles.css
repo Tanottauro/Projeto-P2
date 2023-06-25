@@ -17,8 +17,8 @@ body {
   grid-template-columns: 260px 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 3fr;
   grid-template-areas:
-    "sidebar header header header"
-    "sidebar main main main";
+    "barralateral header header header"
+    "barralateral main main main";
   height: 100vh;
 }
 
@@ -41,8 +41,8 @@ body {
 
 /* ---------- BARRA-LATERAL ---------- */
 
-#sidebar {
-  grid-area: sidebar;
+#barralateral {
+  grid-area: barralateral;
   height: 100%;
   background-color: #A332B3;
   overflow-y: auto;
@@ -50,7 +50,7 @@ body {
   -webkit-transition: all 0.5s;
 }
 
-.sidebar-title {
+.barralateral-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,39 +58,39 @@ body {
   margin-bottom: 30px;
 }
 
-.sidebar-title > span {
+.barralateral-title > span {
   display: none;
 }
 
-.sidebar-brand {
+.barralateral-brand {
   margin-top: 15px;
   font-size: 20px;
   font-weight: 700;
 }
 
-.sidebar-list {
+.barralateral-list {
   padding: 0;
   margin-top: 15px;
   list-style-type: none;
 }
 
-.sidebar-list-item {
+.barralateral-list-item {
   padding: 20px 20px 20px 20px;
   font-size: 18px;
 }
 
-.sidebar-list-item:hover {
+.barralateral-list-item:hover {
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
 
-.sidebar-list-item > a {
+.barralateral-list-item > a {
   text-decoration: none;
   color: #ffffff;
 
 }
 
-.sidebar-responsive {
+.barralateral-responsive {
   display: inline !important;
   position: absolute;
 
@@ -177,7 +177,7 @@ body {
 
 /* ---------- Proporções de Tela ---------- */
 
-/* Medium <= 992px */
+/* Media <= 992px */
 
 @media screen and (max-width: 992px) {
   .grid-container {
@@ -188,7 +188,7 @@ body {
       "main";
   }
 
-  #sidebar {
+  #barralateral {
     display: none;
   }
 
@@ -196,7 +196,7 @@ body {
     display: inline;
   }
 
-  .sidebar-title > span {
+  .barralateral-title > span {
     display: inline;
   }
 }
