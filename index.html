@@ -1,87 +1,275 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="pt-br">
+<!-- Gabriel é o melhor -->
+<!-- Eduardo é o melhor -->
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Store Logistic</title>
 
-    <title>Meu Site de Estoque</title>
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
   </head>
-
   <body>
+    <div class="grid-container">
 
-    <button id="barralateral-toggle">&#9776;</button>
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
 
-    <div class="barralateral">
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">shopping_cart</span> STORE
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
 
-      <div class="logo">
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="#" >
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#meucu" >
+              <span class="material-icons-outlined">inventory_2</span> Products
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" >
+              <span class="material-icons-outlined">category</span> Categories
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" >
+              <span class="material-icons-outlined">groups</span> Customers
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" >
+              <span class="material-icons-outlined">fact_check</span> Inventory
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" >
+              <span class="material-icons-outlined">poll</span> Reports
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" >
+              <span class="material-icons-outlined">settings</span> Settings
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
 
-        <h1><a class="S">S</a>tore <a class="L">L</a>ogistics</h1>
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <h2>DASHBOARD</h2>
+        </div>
 
-      </div>
+        <div class="main-cards">
 
-      <ul class="menu">
-        <li class="conexaoL">
-          <a href="#">
-            <i class='bx bx-home icone' ></i>
-            <span class="texto Ltexto">Menu</span>
-          </a>
-        </li>
-        <li class="conexaoL">
-          <a href="#">
-            <i class='bx bx-box icone'></i>
-            <span class="texto Ltexto">Inventario de Estoque</span>
-          </a>
-        </li>
-        <li class="conexaoL">
-        <li class="conexaoL">
-          <a href="#">
-            <i class='bx bx-error-alt icone'></i>
-            <span class="texto Ltexto">Reclamações e Sujestões.</span>
-          </a>
-        </li>
-        <li class="conexaoL">
-          <a href="#">
-            <i class='bx bx-note icone'></i>
-            <span class="texto Ltexto">Relatorios</span>
-          </a>
-        </li>
-        <li class="">
-          <a href="#">
-            <i class='bx bx-log-out icone' ></i>
-              <span class="texto Ltexto">Encerrar sessão</span>
-          </a>
-        </li>
-      </ul>
-      <div class="modo-escuro">
+          <div class="card">
+            <div class="card-inner">
+              <h3>PRODUCTS</h3>
+              <span class="material-icons-outlined">inventory_2</span>
+            </div>
+            <h1>249</h1>
+          </div>
 
-        <label class="trocar">
+          <div class="card">
+            <div class="card-inner">
+              <h3>CATEGORIES</h3>
+              <span class="material-icons-outlined">category</span>
+            </div>
+            <h1>25</h1>
+          </div>
 
-        <input type="checkbox" id="toggle"/>
+          <div class="card">
+            <div class="card-inner">
+              <h3>CUSTOMERS</h3>
+              <span class="material-icons-outlined">groups</span>
+            </div>
+            <h1>1500</h1>
+          </div>
 
-        <div class="mudar lado"></div>
+          <div class="card">
+            <div class="card-inner">
+              <h3>ALERTS</h3>
+              <span class="material-icons-outlined">notification_important</span>
+            </div>
+            <h1>56</h1>
+          </div>
 
+        </div>
 
-        </label>
+        <div class="charts">
 
-        <span class="texto"><i class='bx bx-moon icone lua' ></i>Modo escuro</span>
+          <div class="charts-card">
+            <h2 class="chart-title">Top 5 Products</h2>
+            <div id="bar-chart"></div>
+          </div>
 
-      </div>
+          <div class="charts-card">
+            <h2 class="chart-title">Purchase and Sales Orders</h2>
+            <div id="area-chart"></div>
+          </div>
+
+        </div>
+
+        <div class="block"></div>
+
+        <div class="charts">
+
+            <div class="charts-card">
+              <h2 class="chart-title">Top 5 Products</h2>
+              <div id="bar-chart"></div>
+            </div>
+  
+            <div class="charts-card">
+              <h2 class="chart-title">Purchase and Sales Orders</h2>
+              <div id="area-chart"></div>
+            </div>
+  
+        </div>
+
+        <div class="charts">
+
+            <div class="charts-card">
+              <h2 class="chart-title">Top 5 Products</h2>
+              <div id="bar-chart"></div>
+            </div>
+  
+            <div class="charts-card">
+              <h2 class="chart-title">Purchase and Sales Orders</h2>
+              <div id="area-chart"></div>
+            </div>
+  
+          </div>
+  
+          <div class="block"></div>
+  
+          <div class="charts">
+  
+              <div class="charts-card">
+                <h2 class="chart-title">Top 5 Products</h2>
+                <div id="bar-chart"></div>
+              </div>
+    
+              <div class="charts-card">
+                <h2 class="chart-title">Purchase and Sales Orders</h2>
+                <div id="area-chart"></div>
+              </div>
+    
+          </div>
+
+          <div class="charts">
+
+            <div class="charts-card">
+              <h2 class="chart-title">Top 5 Products</h2>
+              <div id="bar-chart"></div>
+            </div>
+  
+            <div class="charts-card">
+              <h2 class="chart-title">Purchase and Sales Orders</h2>
+              <div id="area-chart"></div>
+            </div>
+  
+          </div>
+  
+          <div class="block"></div>
+  
+          <div class="charts" id="meucu">
+  
+              <div class="charts-card">
+                <h2 class="chart-title">Top 5 Products</h2>
+                <div id="bar-chart"></div>
+              </div>
+    
+              <div class="charts-card">
+                <h2 class="chart-title">Purchase and Sales Orders</h2>
+                <div id="area-chart"></div>
+              </div>
+    
+          </div>
+
+          <section id="meucu">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="botao">Adicionar produto</button>
+            </br>
+            <div id="id01" class="caixaTudo">
+                <span onclick="document.getElementById('id01').style.display='none'" class="fechar" title="fechar caixaTudo">&times;</span>
+                <form class="formulario" action="/action_page.php">
+                  <div class="caixa">
+                    <h1 class="titulo">Adicionar produto</h1>
+                    <p>Para adição do estoque.</p>
+                    <hr>
+                    <label for="categoriaProduto"><b>Categoria do produto:</b></label>
+                    <select>
+              
+                      <option value="">Selecione uma opção</option>
+                    
+                      <option value="opcao1">Opção 1</option>
+                    
+                      <option value="opcao2">Opção 2</option>
+                    
+                      <option value="opcao3">Opção 3</option>
+                    
+                    </select>
+              
+                    </br>
+              
+                    <label for="nomeProduto"><b>Nome do produto:</b></label>
+                    <input type="text" placeholder="Digite o nome desse produto" id="nomeProduto" required>
+              
+                    <label for="dataValidade"><b>Data de validade:</b></label>
+                    <input type="date" id="dataValidade" required>
+              
+                    <label for="codProduto"><b>Código do produto:</b></label>
+                    <input type="number" placeholder="Digite o código do produto." id="codProduto" required>
+              
+                    <label for="medConsumoProduto"><b>Consumo diário do produto:</b></label>
+                    <input type="number" placeholder="Digite o consumo diário do produto." id="medConsumoProduto" required>
+                    
+                    <div class="botaoEmBaixo">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelar">Cancelar</button>
+                      <button type="submit" class="addProduto">Adicionar produto</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+          </section>
+
+      </main>
+      <!-- End Main -->
 
     </div>
-
-    <div class="conteudo">
-
-      <!-- Conteúdo do site -->
-
-    </div>
-
-    <script src="script.js"></script>
-
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
   </body>
-
 </html>
