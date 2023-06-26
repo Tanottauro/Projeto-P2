@@ -1,241 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<!--OLá mundo-->>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Store Logistic</title>
+    <title>Store Logistics</title>
 
-    <!-- Montserrat Font -->
+    <!-- FONTES -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- Material Icons -->
+    <!--PEGAMOS OS ICONES DO GOOGLE -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="grid-container">
+    <div class="grade-do-container">
 
-      <!-- Header -->
-      <header class="header">
-        <div class="menu-icon" onclick="openSidebar()">
-          <span class="material-icons-outlined">menu</span>
-        </div>
-        <div class="header-left">
-          <span class="material-icons-outlined">search</span>
-        </div>
-        <div class="header-right">
-          <span class="material-icons-outlined">notifications</span>
-          <span class="material-icons-outlined">email</span>
-          <span class="material-icons-outlined">account_circle</span>
-        </div>
-      </header>
-      <!-- End Header -->
-
-      <!-- Sidebar -->
-      <aside id="sidebar">
-        <div class="sidebar-title">
-          <div class="sidebar-brand">
-            <span class="material-icons-outlined">shopping_cart</span> STORE
+      <!-- Barra Lateral -->
+      <aside id="barralateral">
+        <div class="barralateral-titulo">
+          <div class="barralateral-marca">
+            <span class="material-icons-outlined">inventory</span> <i class="S">S</i>tore <i class="L">L</i>ogistics
           </div>
-          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+          <span class="material-icons-outlined" onclick="closebarralateral()">close</span>
         </div>
 
-        <ul class="sidebar-list">
-          <li class="sidebar-list-item">
-            <a href="#" >
-              <span class="material-icons-outlined">dashboard</span> Dashboard
+        <ul class="barralateral-topicos">
+          <li class="barralateral-topicos-item">
+            <a href="#inicio" >
+              <span class="material-icons-outlined">home</span> Inicio
             </a>
           </li>
-          <li class="sidebar-list-item">
-            <a href="#meucu" >
-              <span class="material-icons-outlined">inventory_2</span> Products
+          <li class="barralateral-topicos-item">
+            <a href="#inventario" >
+              <span class="material-icons-outlined">inventory_2</span> Inventario
             </a>
           </li>
-          <li class="sidebar-list-item">
-            <a href="#" >
-              <span class="material-icons-outlined">category</span> Categories
+          <li class="barralateral-topicos-item">
+            <a href="#categorias" >
+              <span class="material-icons-outlined">category</span> Categorias
             </a>
           </li>
-          <li class="sidebar-list-item">
+          <li class="barralateral-topicos-item">
             <a href="#" >
-              <span class="material-icons-outlined">groups</span> Customers
+              <span class="material-icons-outlined">groups</span> não sei
             </a>
           </li>
-          <li class="sidebar-list-item">
-            <a href="#" >
-              <span class="material-icons-outlined">fact_check</span> Inventory
+          <li class="barralateral-topicos-item">
+            <a href="#relatorios" >
+              <span class="material-icons-outlined">fact_check</span> Relatorios
             </a>
           </li>
-          <li class="sidebar-list-item">
-            <a href="#" >
-              <span class="material-icons-outlined">poll</span> Reports
+          <li class="barralateral-topicos-item">
+            <a href="#reclamacoes" >
+              <span class="material-icons-outlined">error</span> Reclamações
             </a>
           </li>
-          <li class="sidebar-list-item">
-            <a href="#" >
-              <span class="material-icons-outlined">settings</span> Settings
+          <li class="barralateral-topicos-item">
+            <a href="#configuracoes" >
+              <span class="material-icons-outlined">settings</span> Configurações
             </a>
           </li>
         </ul>
       </aside>
-      <!-- End Sidebar -->
+      <!-- Fim da Barra Lateral -->
 
-      <!-- Main -->
-      <main class="main-container">
-        <div class="main-title">
-          <h2>DASHBOARD</h2>
+      <!-- COMEÇO DO CONTEUDO -->
+      <main class="conteiner-central">
+        <div class="titulo-central">
+          <h2>
+            <span class="digitar" id="inicio">PAINEL CENTRAL</span>
+            <span class="cursor"></span>
+          </h2>
         </div>
+        <section>
+        <div class="cartas-centrais">
 
-        <div class="main-cards">
-
-          <div class="card">
-            <div class="card-inner">
-              <h3>PRODUCTS</h3>
-              <span class="material-icons-outlined">inventory_2</span>
-            </div>
-            <h1>249</h1>
+          <div class="cartas">
+            <a href="#">
+              <div class="cartas-internas">
+                <h3>PRODUTOS</h3>
+                <span class="material-icons-outlined">inventory_2</span>
+              </div>
+              <h1 id="quantiadeDeProdutos">249</h1>
+            </a>
           </div>
 
-          <div class="card">
-            <div class="card-inner">
-              <h3>CATEGORIES</h3>
-              <span class="material-icons-outlined">category</span>
-            </div>
-            <h1>25</h1>
+          <div class="cartas">
+            <a href="#">
+              <div class="cartas-internas">
+                <h3>CATEGORIA</h3>
+                <span class="material-icons-outlined">category</span>
+              </div>
+              <h1>25</h1>
+            </a>
           </div>
 
-          <div class="card">
-            <div class="card-inner">
-              <h3>CUSTOMERS</h3>
-              <span class="material-icons-outlined">groups</span>
-            </div>
-            <h1>1500</h1>
+          <div class="cartas">
+            <a href="#">
+              <div class="cartas-internas">
+                <h3>NAO SEI</h3>
+                <span class="material-icons-outlined">groups</span>
+              </div>
+              <h1>1500</h1>
+            </a>
           </div>
 
-          <div class="card">
-            <div class="card-inner">
-              <h3>ALERTS</h3>
-              <span class="material-icons-outlined">notification_important</span>
-            </div>
-            <h1>56</h1>
+          <div class="cartas">
+            <a href="#">
+              <div class="cartas-internas">
+                <h3>ALERTAS</h3>
+                <span class="material-icons-outlined">notification_important</span>
+              </div>
+              <h1>56</h1>
+            </a>
           </div>
+        
 
-        </div>
-
+        </div>        
         <div class="charts">
-
-          <div class="charts-card">
-            <h2 class="chart-title">Top 5 Products</h2>
+          <div class="charts-cartas">
+            <h2 class="chart-title">Inicio</h2>
             <div id="bar-chart"></div>
           </div>
-
-          <div class="charts-card">
-            <h2 class="chart-title">Purchase and Sales Orders</h2>
-            <div id="area-chart"></div>
-          </div>
-
         </div>
-
+      </section>
         <div class="block"></div>
 
         <div class="charts">
 
-            <div class="charts-card">
-              <h2 class="chart-title">Top 5 Products</h2>
+            <div class="charts-cartas">
+              <h2 class="chart-title">Top 5 produtos</h2>
               <div id="bar-chart"></div>
-            </div>
-  
-            <div class="charts-card">
-              <h2 class="chart-title">Purchase and Sales Orders</h2>
-              <div id="area-chart"></div>
             </div>
   
         </div>
-
-        <div class="charts">
-
-            <div class="charts-card">
-              <h2 class="chart-title">Top 5 Products</h2>
-              <div id="bar-chart"></div>
-            </div>
-  
-            <div class="charts-card">
-              <h2 class="chart-title">Purchase and Sales Orders</h2>
-              <div id="area-chart"></div>
-            </div>
-  
-          </div>
   
           <div class="block"></div>
   
           <div class="charts">
   
-              <div class="charts-card">
-                <h2 class="chart-title">Top 5 Products</h2>
+              <div class="charts-cartas">
+                <h2 class="chart-title">Top 5 Produtos</h2>
                 <div id="bar-chart"></div>
               </div>
     
-              <div class="charts-card">
-                <h2 class="chart-title">Purchase and Sales Orders</h2>
-                <div id="area-chart"></div>
-              </div>
-    
-          </div>
-
-          <div class="charts">
-
-            <div class="charts-card">
-              <h2 class="chart-title">Top 5 Products</h2>
-              <div id="bar-chart"></div>
-            </div>
-  
-            <div class="charts-card">
-              <h2 class="chart-title">Purchase and Sales Orders</h2>
-              <div id="area-chart"></div>
-            </div>
-  
+              
           </div>
   
           <div class="block"></div>
+          
+          <select id="reclamacoes">
+          <div class="charts">
   
-          <div class="charts" id="meucu">
-  
-              <div class="charts-card">
-                <h2 class="chart-title">Top 5 Products</h2>
+              <div class="charts-cartas">
+                <h2 class="chart-title">Reclamações</h2>
                 <div id="bar-chart"></div>
               </div>
     
-              <div class="charts-card">
-                <h2 class="chart-title">Purchase and Sales Orders</h2>
-                <div id="area-chart"></div>
+          </div>
+          
+        </select>
+        
+          <section id="inventario">
+            <div class="charts" id="meucu">
+  
+              <div class="charts-cartas">
+                <h2 class="chart-title">Inventário</h2>
+                <div id="bar-chart"></div>
               </div>
     
-          </div>
-
-          <section id="meucu">
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="botao">Adicionar produto</button>
+            </div>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn-itens">Adicionar produto</button>
             </br>
             <div id="id01" class="caixaTudo">
                 <span onclick="document.getElementById('id01').style.display='none'" class="fechar" title="fechar caixaTudo">&times;</span>
-                <form class="formulario" action="/action_page.php">
+                <form class="formulario">
                   <div class="caixa">
-                    <h1 class="titulo">Adicionar produto</h1>
-                    <p>Para adição do estoque.</p>
+                    <h1 class="titulo">Informações do produto</h1>
                     <hr>
                     <label for="categoriaProduto"><b>Categoria do produto:</b></label>
-                    <select>
-              
-                      <option value="">Selecione uma opção</option>
-                    
-                      <option value="opcao1">Opção 1</option>
-                    
-                      <option value="opcao2">Opção 2</option>
-                    
-                      <option value="opcao3">Opção 3</option>
-                    
+                    <select id="categoriaProduto">              
+                      <option value="">Selecione uma opção</option>                    
                     </select>
               
                     </br>
@@ -246,30 +193,39 @@
                     <label for="dataValidade"><b>Data de validade:</b></label>
                     <input type="date" id="dataValidade" required>
               
-                    <label for="codProduto"><b>Código do produto:</b></label>
-                    <input type="number" placeholder="Digite o código do produto." id="codProduto" required>
+                    <label for="quantProduto"><b>Quantidade em estoque:</b></label>
+                    <input type="number" placeholder="Digite o código do produto." id="quantProduto" required>
               
-                    <label for="medConsumoProduto"><b>Consumo diário do produto:</b></label>
+                    <label for="medConsumoProduto"><b>Consumo do produto(3 segundos):</b></label>
                     <input type="number" placeholder="Digite o consumo diário do produto." id="medConsumoProduto" required>
                     
                     <div class="botaoEmBaixo">
                       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelar">Cancelar</button>
-                      <button type="submit" class="addProduto">Adicionar produto</button>
+                      <button type="button" class="addProduto" onclick="adicionarItem()">Adicionar produto</button>
                     </div>
                   </div>
                 </form>
               </div>
+
+              <div class="itens-container">
+
+                <ul id="listaItens">
+                </ul>
+              
+              </div>
+
           </section>
 
+          
+
       </main>
-      <!-- End Main -->
+      <!-- fINAL -->
 
     </div>
     <!-- Scripts -->
-    <!-- ApexCharts -->
+    <!--  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
     <!-- Custom JS -->
-    <script src="scripts.js"></script>
-    <footer>Eu quero uma footer</footer>
+    <script src="script.js"></script>
   </body>
 </html>
