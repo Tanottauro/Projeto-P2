@@ -19,17 +19,18 @@
 
       <!-- COMECO CABECALHO -->
       <header class="header">
-        <div class="menu-icone" onclick="openbarralateral()">
-          <span class="material-icons-outlined">menu</span>
+        <!-- NÂO ESTÁ NEM APARECENDO, ENTÃO NÃO TEM UM PQ DE ESTAR AQUI (OPITO EM APAGAR) -->
+        <!-- <div class="menu-icone" onclick="openbarralateral()">
+          <span class="material-icons-outlined">Menu</span>
         </div>
         <div class="header-esquerda">
-          <span class="material-icons-outlined">search</span>
+          <span class="material-icons-outlined">Pesquisar</span>
         </div>
         <div class="header-direita">
-          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">Notificações</span>
           <span class="material-icons-outlined">email</span>
           <span class="material-icons-outlined">account_circle</span>
-        </div>
+        </div> -->
       </header>
       <!-- FINAL CABECALHO -->
 
@@ -85,41 +86,52 @@
       <!-- COMEÇO DO CONTEUDO -->
       <main class="conteiner-central">
         <div class="titulo-central">
-          <h2>DASHBOARD</h2>
+          <h2>
+            <span class="digitar">PAINEL CENTRAL</span>
+            <span class="cursor"></span>
+          </h2>
         </div>
 
         <div class="cartas-centrais">
 
           <div class="cartas">
-            <div class="cartas-internas">
-              <h3>PRODUTOS</h3>
-              <span class="material-icons-outlined">inventory_2</span>
-            </div>
-            <h1>249</h1>
+            <a href="#">
+              <div class="cartas-internas">
+                <h3>PRODUTOS</h3>
+                <span class="material-icons-outlined">inventory_2</span>
+              </div>
+              <h1>249</h1>
+            </a>
           </div>
 
           <div class="cartas">
-            <div class="cartas-internas">
-              <h3>CATEGORIA</h3>
-              <span class="material-icons-outlined">category</span>
-            </div>
-            <h1>25</h1>
+            <a href="#">
+              <div class="cartas-internas">
+                <h3>CATEGORIA</h3>
+                <span class="material-icons-outlined">category</span>
+              </div>
+              <h1>25</h1>
+            </a>
           </div>
 
           <div class="cartas">
-            <div class="cartas-internas">
-              <h3>NAO SEI</h3>
-              <span class="material-icons-outlined">groups</span>
-            </div>
-            <h1>1500</h1>
+            <a href="#">
+              <div class="cartas-internas">
+                <h3>NAO SEI</h3>
+                <span class="material-icons-outlined">groups</span>
+              </div>
+              <h1>1500</h1>
+            </a>
           </div>
 
           <div class="cartas">
-            <div class="cartas-internas">
-              <h3>ALERTAS</h3>
-              <span class="material-icons-outlined">notification_important</span>
-            </div>
-            <h1>56</h1>
+            <a href="#">
+              <div class="cartas-internas">
+                <h3>ALERTAS</h3>
+                <span class="material-icons-outlined">notification_important</span>
+              </div>
+              <h1>56</h1>
+            </a>
           </div>
 
         </div>
@@ -127,7 +139,7 @@
         <div class="charts"><!--Tem que mudar isso PORQUE TA RELACIONADO A GRAFICOS-->
 
           <div class="charts-cartas">
-            <h2 class="chart-title">Top 5 Products</h2>
+            <h2 class="chart-title">Top 5 Produtos</h2>
             <div id="bar-chart"></div>
           </div>
 
@@ -143,7 +155,7 @@
         <div class="charts">
 
             <div class="charts-cartas">
-              <h2 class="chart-title">Top 5 Products</h2>
+              <h2 class="chart-title">Top 5 produtos</h2>
               <div id="bar-chart"></div>
             </div>
   
@@ -157,7 +169,7 @@
         <div class="charts">
 
             <div class="charts-cartas">
-              <h2 class="chart-title">Top 5 Products</h2>
+              <h2 class="chart-title">Top 5 Produtos</h2>
               <div id="bar-chart"></div>
             </div>
   
@@ -173,7 +185,7 @@
           <div class="charts">
   
               <div class="charts-cartas">
-                <h2 class="chart-title">Top 5 Products</h2>
+                <h2 class="chart-title">Top 5 Produtos</h2>
                 <div id="bar-chart"></div>
               </div>
     
@@ -187,7 +199,7 @@
           <div class="charts">
 
             <div class="charts-cartas">
-              <h2 class="chart-title">Top 5 Products</h2>
+              <h2 class="chart-title">Top 5 Produtos</h2>
               <div id="bar-chart"></div>
             </div>
   
@@ -219,10 +231,9 @@
             </br>
             <div id="id01" class="caixaTudo">
                 <span onclick="document.getElementById('id01').style.display='none'" class="fechar" title="fechar caixaTudo">&times;</span>
-                <form class="formulario" action="/action_page.php">
+                <form class="formulario">
                   <div class="caixa">
-                    <h1 class="titulo">Adicionar produto</h1>
-                    <p>Para adição do estoque.</p>
+                    <h1 class="titulo">Informações do produto</h1>
                     <hr>
                     <label for="categoriaProduto"><b>Categoria do produto:</b></label>
                     <select>
@@ -269,6 +280,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
     <!-- Custom JS -->
     <script src="scripts.js"></script>
-    <footer>&copy; A nata</footer>
   </body>
 </html>
