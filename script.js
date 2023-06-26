@@ -17,6 +17,19 @@ function closebarralateral() {
   }
 }
 
+function enviarMensagem() {
+  var assunto = document.getElementById("assunto").value;
+  var descricao = document.getElementById("descricao").value;
+
+  // Substituir espaços por "%20" na descrição
+  descricao = descricao.replace(/ /g, "%20");
+
+  // Montar a URL da API do WhatsApp
+  var url = "https://api.whatsapp.com/send?phone=61996226716&text=" + assunto + "%20" + descricao;
+
+  // Redirecionar para a URL no WhatsApp
+  window.location.href = url;
+}
 
 
 
