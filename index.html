@@ -70,11 +70,11 @@
       <main class="conteiner-central">
         <div class="titulo-central">
           <h2>
-            <span class="digitar">PAINEL CENTRAL</span>
+            <span class="digitar" id="inicio">PAINEL CENTRAL</span>
             <span class="cursor"></span>
           </h2>
         </div>
-        <section id="inicio">
+        <section>
         <div class="cartas-centrais">
 
           <div class="cartas">
@@ -149,16 +149,19 @@
           </div>
   
           <div class="block"></div>
-  
-          <div class="charts" id="meucu">
+          
+          <select id="reclamacoes">
+          <div class="charts">
   
               <div class="charts-cartas">
-                <h2 class="chart-title">Top 5 Products</h2>
+                <h2 class="chart-title">Reclamações</h2>
                 <div id="bar-chart"></div>
               </div>
     
           </div>
-
+          
+        </select>
+        
           <section id="inventario">
             <div class="charts" id="meucu">
   
@@ -177,14 +180,8 @@
                     <h1 class="titulo">Informações do produto</h1>
                     <hr>
                     <label for="categoriaProduto"><b>Categoria do produto:</b></label>
-                    <select id="categoriaProduto">
-              
+                    <select id="categoriaProduto">              
                       <option value="">Selecione uma opção</option>                    
-                      <option value="Fruta">Fruta</option>                    
-                      <option value="Cereal">Cereal</option>                    
-                      <option value="Condimento">Condimento</option>
-                      <option value="Bebida">Bebida</option>
-                    
                     </select>
               
                     </br>

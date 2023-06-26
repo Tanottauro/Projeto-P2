@@ -148,7 +148,7 @@ function adicionarItem() {
 
   
 
-  // Diminuir quantidade em estoque a cada minuto
+  // Diminuir quantidade em estoque 
 
   setInterval(() => {
 
