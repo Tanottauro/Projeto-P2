@@ -162,4 +162,13 @@ function adicionarItem() {
 
   }, 3000); // 3000 ms = 3 segundos
 
+  atualizarQuantidadeProdutos();
+}
+
+function atualizarQuantidadeProdutos() {
+
+  const totalItens = document.getElementById('listaItens').childElementCount;
+
+  document.getElementById('quantiadeDeProdutos').textContent = String(totalItens);
+
 }
